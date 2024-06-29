@@ -1,0 +1,6 @@
+options\Start_bot.class
+parsing\Pars.class
+Utils\UtilsPars.class
+comands\RequestStart.class
+options\Telegram_Bot.class
+parsing\ParsElem.class

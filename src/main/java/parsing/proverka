@@ -1,0 +1,11 @@
+ public List<String> responsFull() throws IOException {
+
+            Document document = Jsoup.connect("https://smart-lab.ru/q/shares/").get();
+            Elements parsАкцйий = document.selectXpath("//td[@class='trades-table__name']");
+            Elements parsЦена = document.selectXpath("//td[@class='trades-table__price']");
+
+            for (int i = 0; i <= 150; i++) {
+                  вывод.add(parsАкцйий.get(i).text() + " : " + parsЦена.get(i).text() + " руб");
+            }
+            return вывод;
+        }
